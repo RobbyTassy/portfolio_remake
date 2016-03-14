@@ -20,21 +20,42 @@ $(document).ready(function () {
 
   $("#nav").hover(
     function() {
-      console.log("adding padding");
+      // console.log("adding padding");
       $("#nav, #body").addClass("toggled");
     },
     function() {
-      console.log("removing padding");
+      // console.log("removing padding");
       $("#nav, #body").removeClass("toggled");
     }
   );
 
   $('#about').click(function(){
-    $('#body').animate({
+    $('body').animate({
         scrollTop: $('#about-me').offset().top
     }, 500);
     return false;
 });
+
+  $('#home').click(function(){
+    $('body').animate({
+        scrollTop: $('#top_div').offset().top
+    }, 500);
+    return false;
+  });
+
+  $('#portfolio_link').click(function(){
+    $('body').animate({
+        scrollTop: $('#portfolio').offset().top
+    }, 500);
+    return false;
+  });
+
+  $('#contact').click(function(){
+    $('body').animate({
+        scrollTop: $('#contact-me').offset().top
+    }, 500);
+    return false;
+  });
 
 
 });
