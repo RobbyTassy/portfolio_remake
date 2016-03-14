@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+  alert('document ready');
+
+  $("#nav").hover(
+    function() {
+      console.log("adding padding");
+      $("#nav, #body").addClass("toggled");
+    },
+    function() {
+      console.log("removing padding");
+      $("#nav, #body").removeClass("toggled");
+    }
+  );
+
+  $('#about').click(function(){
+    $('#body').animate({
+        scrollTop: $('#about-me').offset().top
+    }, 500);
+    return false;
+});
+
+
+});

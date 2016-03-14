@@ -13,6 +13,11 @@ ul {
    list-style-type: none;
    padding: 0;
    margin: 0;
+   text-align: center;
+}
+
+li {
+  padding: 10px;
 }
 
 h1 {
@@ -23,17 +28,20 @@ h1 {
 #nav {
   position: fixed;
   background-color: green;
-  width: 10%;
+  // width: 10%;
   float: left;
   height: 100%;
   padding-top: 10%;
   margin: 0;
+  transition: all 0.5s ease;
+}
 
+.toggled {
+  padding-left: 10%;
 }
 
 #body {
-  // background-color: yellow;
-  // overflow: scroll;
+  transition: all 0.5s ease;
 }
 
 #top_div {
@@ -57,19 +65,23 @@ h1 {
 
     #about-me > h1 {
       text-align: center;
+      padding-bottom: 10%;
     }
 
     #picture {
+      padding-top: 2%;
       background-color: white;
       width: 25%;
       float: left;
       margin-left: 15%;
+      height: 50%;
     }
 
     #bio {
       background-color: blue;
       width: 50%;
       float: left;
+      height: 55%;
     }
 
 #portfolio {
@@ -85,26 +97,31 @@ h1 {
     }
 
     #sample-one {
+      margin: 10% auto;
       background-color: red;
       width: 25%;
       float: left;
       display:inline-block;
       margin-left: 15%;
+      height: 50%;
     }
 
     #sample-two {
+      margin: 10% auto;
       background-color: white;
       width: 25%;
       float: left;
       display:inline-block;
+      height: 50%;
     }
 
     #sample-three {
+      margin: 10% auto;
       background-color: blue;
       width: 25%;
       float:left;
       display:inline-block;
-
+      height: 50%;
     }
 
 #contact-me {
@@ -120,6 +137,13 @@ h1 {
     #formbox {
       background-color: maroon;
       width: 50%;
-      margin: 0 auto;
+      margin: 10% auto;
       text-align: center;
+      height: 50%;
     }
+
+footer {
+background-color: blue;
+color: white;
+padding-left: 50%;
+}
