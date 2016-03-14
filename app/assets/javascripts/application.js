@@ -16,18 +16,18 @@
 //= require_tree .
 
 $(document).ready(function () {
-  // alert('document ready');
 
+// effect that adds padding left to #nav and #body when mouse hovers over
   $("#nav").hover(
     function() {
-      // console.log("adding padding");
       $("#nav, #body").addClass("toggled");
     },
+// effect that removes padding left to #nav and #body when mouse moves away
     function() {
-      // console.log("removing padding");
       $("#nav, #body").removeClass("toggled");
     }
   );
+
 
   $('#about').click(function(){
     $('body').animate({
