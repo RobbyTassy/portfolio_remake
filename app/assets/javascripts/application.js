@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).ready(function () {
-  alert('document ready');
+  // alert('document ready');
 
   $("#nav").hover(
     function() {
