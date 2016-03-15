@@ -438,7 +438,9 @@ footer {
 // about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 320px) {
 
-// no difference from above
+  #top_div {
+    height: 100vh;
+  }
 
   }
 
