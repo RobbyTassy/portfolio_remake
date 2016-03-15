@@ -16,9 +16,14 @@ ul {
    text-align: center;
 }
 
+#menu {
+  // background-color: yellow;
+  font-size: 2em;
+}
+
 li {
   padding: 10px;
-  background-color: rgb(143, 56, 189);
+  // background-color: rgb(143, 56, 189);
 }
 
 h1 {
@@ -35,7 +40,7 @@ h1 {
   padding-top: 10%;
   margin: 0;
   transition: all 0.5s ease;
-  padding-left: -10px;
+  left: -5%;
 }
 
 .toggled {
