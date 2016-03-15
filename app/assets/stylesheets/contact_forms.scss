@@ -272,7 +272,7 @@ footer {
     // }
 
     #top_div {
-      height: 40vh;
+      height: 100vh;
     }
 
     #top_div > h1 {
@@ -351,9 +351,6 @@ footer {
   }
 
 // Mobile M
-// header appears off the screen to the right
-// about and portfolio divs should be stacked
-// footer should float to bottom of contact me div
 // about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 375px) {
 
@@ -438,11 +435,10 @@ footer {
 
 
 // Mobile S
-// header appears off the screen to the right
-// about and portfolio divs should be stacked
-// footer should float to bottom of contact me div
 // about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 320px) {
+
+// no difference from above
 
   }
 
