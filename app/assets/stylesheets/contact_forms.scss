@@ -8,7 +8,6 @@
   padding: 0;
 }
 
-
 ul {
    list-style-type: none;
    padding: 0;
@@ -32,9 +31,9 @@ h1 {
 }
 
 #nav {
+  z-index: 100;
   position: fixed;
   background-color: green;
-  // width: 10%;
   float: left;
   height: 100%;
   padding-top: 10%;
@@ -98,7 +97,6 @@ h1 {
   height: 100vh;
 }
 
-
     #portfolio > h1 {
       text-align: center;
     }
@@ -150,38 +148,115 @@ h1 {
     }
 
 footer {
-  background-color: blue;
+  position: relative;
+  background-color: grey;
   color: white;
   padding-left: 50%;
 }
 
 
+// MEDIA QUERIES BEGIN HERE
 
 // 4K
-// footer div needs to come up further and float to bottom of contact me div
-// sidebar nav needs to slide more to the right
 @media only screen and (max-device-width: 2560px) {
+
+   #nav {
+     left: -3%;
+   }
+
+   #contact-me > h1 {
+     padding: 0 6% 0 0;
+   }
 
 	}
 
 // Laptop L
-// footer div needs to come up further and float to bottom of contact me div
 @media only screen and (max-device-width: 1440px) {
 
+    #contact-me > h1 {
+      padding: 0 3% 0 0;
+    }
+
+    #nav {
+      left: -6%;
+    }
   }
 
 // Laptop
-// footer div needs to come up further and float to bottom of contact me div
 @media only screen and (max-device-width: 1024px) {
 
+    #nav {
+      left: -8%;
+    }
+
+    #top_div > h1 {
+      text-align: center;
+      background-color: blue;
+      width: 50%;
+      margin: 30% 30%;
+    }
 	}
 
 // Tablet
-// sidebar div should retract a little more and become less noticeable
-// pic, bio, sample one, two, three div should become smaller
-// footer div needs to come down and float to bottom of contact me div
-// contact me div should become more centered
 @media only screen and (max-device-width: 768px) {
+
+
+    #top_div > h1 {
+      text-align: center;
+      background-color: blue;
+      width: 50%;
+      margin: 30% 15%;
+    }
+
+    #picture {
+      background-color: white;
+      width: 20%;
+      float: left;
+      height: 30%;
+    }
+
+    #bio {
+      background-color: blue;
+      width: 40%;
+      float: left;
+      height: 45%;
+    }
+
+    #sample-one {
+      margin: 10% auto;
+      background-color: red;
+      width: 20%;
+      float: left;
+      display:inline-block;
+      margin-left: 15%;
+      height: 40%;
+    }
+
+    #sample-two {
+      margin: 10% auto;
+      background-color: white;
+      width: 20%;
+      float: left;
+      display:inline-block;
+      height: 40%;
+    }
+
+    #sample-three {
+      margin: 10% auto;
+      background-color: blue;
+      width: 20%;
+      float:left;
+      display:inline-block;
+      height: 40%;
+    }
+
+    #formbox {
+      background-color: maroon;
+      width: 50%;
+      margin: 10% 20%;
+      text-align: center;
+      height: 50%;
+    }
 
   }
 
@@ -191,6 +266,87 @@ footer {
 // footer should float to bottom of contact me div
 // about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 425px) {
+
+    // html, body {
+    //   max-width: 425px;
+    // }
+
+    #top_div {
+      height: 40vh;
+    }
+
+    #top_div > h1 {
+      text-align: center;
+      background-color: blue;
+      width: 20%;
+      margin: 30% 15%;
+    }
+
+    #about-me {
+      height: 60vh;
+    }
+
+      #picture {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        background-color: white;
+        width: 50%;
+        margin-left: 30%;
+        height: 20%;
+      }
+
+      #bio {
+        background-color: blue;
+        width: 50%;
+        clear:left;
+        height: 40%;
+        margin-left: 30%;
+      }
+
+    #portfolio {
+      height: 70vh;
+    }
+
+      #sample-one {
+        margin: 10% auto;
+        background-color: red;
+        width: 50%;
+        margin-left: 30%;
+        height: 25%;
+        margin-bottom: 0;
+      }
+
+      #sample-two {
+        margin-top: 0;
+        margin-left: 30%;
+        background-color: white;
+        width: 50%;
+        clear: left;
+        height: 25%;
+        margin-bottom: 0;
+      }
+
+      #sample-three {
+        margin-top: 0;
+        margin-left: 30%;
+        background-color: blue;
+        width: 50%;
+        clear: left;
+        height: 25%;
+        margin-bottom: 0;
+      }
+
+    #contact-me {
+      height: 50vh;
+    }
+
+    #formbox {
+      background-color: maroon;
+      width: 30%;
+      margin: 5% 10%;
+      text-align: center;
+      height: 50%;
+    }
 
   }
 
@@ -211,3 +367,5 @@ footer {
 @media only screen and (max-device-width: 320px) {
 
   }
+
+// MEDIA QUERIES END HERE
