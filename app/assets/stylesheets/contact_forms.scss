@@ -150,8 +150,64 @@ h1 {
     }
 
 footer {
-background-color: blue;
-color: white;
-padding-left: 50%;
-// float: bottom;
+  background-color: blue;
+  color: white;
+  padding-left: 50%;
 }
+
+
+
+// 4K
+// footer div needs to come up further and float to bottom of contact me div
+// sidebar nav needs to slide more to the right
+@media only screen and (max-device-width: 2560px) {
+
+	}
+
+// Laptop L
+// footer div needs to come up further and float to bottom of contact me div
+@media only screen and (max-device-width: 1440px) {
+
+  }
+
+// Laptop
+// footer div needs to come up further and float to bottom of contact me div
+@media only screen and (max-device-width: 1024px) {
+
+	}
+
+// Tablet
+// sidebar div should retract a little more and become less noticeable
+// pic, bio, sample one, two, three div should become smaller
+// footer div needs to come down and float to bottom of contact me div
+// contact me div should become more centered
+@media only screen and (max-device-width: 768px) {
+
+  }
+
+// Mobile L
+// header appears off the screen to the right
+// about and portfolio divs should be stacked
+// footer should float to bottom of contact me div
+// about, portfolio, contact link are scroll past when clicked
+@media only screen and (max-device-width: 425px) {
+
+  }
+
+// Mobile M
+// header appears off the screen to the right
+// about and portfolio divs should be stacked
+// footer should float to bottom of contact me div
+// about, portfolio, contact link are scroll past when clicked
+@media only screen and (max-device-width: 375px) {
+
+  }
+
+// Mobile S
+// header appears off the screen to the right
+// about and portfolio divs should be stacked
+// footer should float to bottom of contact me div
+// about, portfolio, contact link are scroll past when clicked
+@media only screen and (max-device-width: 320px) {
+
+  }
