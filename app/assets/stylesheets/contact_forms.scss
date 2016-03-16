@@ -28,8 +28,8 @@ li {
 }
 
 h1 {
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
 }
 
 #nav {
@@ -120,11 +120,13 @@ h1 {
 
     #portfolio > h1 {
       text-align: center;
+      padding-top: 5%;
+      padding-bottom: 0;
     }
 
     #sample-one {
       margin: 10% auto;
-      border: 1px black solid;
+      // border: 1px black solid;
       width: 25%;
       float: left;
       margin-left: 15%;
@@ -134,7 +136,7 @@ h1 {
 
     #sample-two {
       margin: 10% auto;
-      border: 1px black solid;
+      // border: 1px black solid;
       width: 25%;
       float: left;
       height: 50%;
@@ -143,34 +145,41 @@ h1 {
 
     #sample-three {
       margin: 10% auto;
-      border: 1px black solid;
+      // border: 1px black solid;
       width: 25%;
       float:left;
       height: 50%;
       text-align: center;
     }
 
-#sample-one > p, #sample-two > p, #sample-three > p {
-  margin: 20% auto;
-  font-size: 6em;
+#sample-one > h2, #sample-two > h2, #sample-three > h2 {
+  margin: 5% 5% 5% auto;
+  font-size: 4em;
+  background-color: grey;
 }
 
 #contact-me {
-  background-color: red;
+  background: url(image_path('contactme.jpg'));
+  background-position: 0% 100%;
+  background-size: cover;
   height: 100vh;
 
 }
 
-    #contact-me > h1 {
+    #formbox> h1 {
       text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      color: white;
+      background-color: green;
     }
 
     #formbox {
       background-color: maroon;
-      width: 50%;
-      margin: 10% auto;
+      width: 30%;
+      margin: 0 0 0 20%;
       text-align: center;
-      height: 50%;
+      height: 90%;
     }
 
 footer {
@@ -193,7 +202,6 @@ footer {
    #contact-me > h1 {
      padding: 0 6% 0 0;
    }
-
 	}
 
 // Laptop L
@@ -287,15 +295,8 @@ footer {
   }
 
 // Mobile L
-// header appears off the screen to the right
-// about and portfolio divs should be stacked
-// footer should float to bottom of contact me div
-// about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 425px) {
 
-    // html, body {
-    //   max-width: 425px;
-    // }
 
     #top_div {
       height: 100vh;
