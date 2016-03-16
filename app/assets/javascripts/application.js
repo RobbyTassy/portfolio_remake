@@ -20,11 +20,11 @@ $(document).ready(function () {
 // effect that adds padding left to #nav and #body when mouse hovers over
   $("#nav").hover(
     function() {
-      $("#nav, #body").addClass("toggled");
+      $("#nav").addClass("toggled");
     },
 // effect that removes padding left to #nav and #body when mouse moves away
     function() {
-      $("#nav, #body").removeClass("toggled");
+      $("#nav").removeClass("toggled");
     }
   );
 
