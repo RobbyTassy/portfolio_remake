@@ -118,10 +118,19 @@ h1 {
   height: 100vh;
 }
 
+#mywork {
+  padding-left: 15%;
+}
+
+#portfolio > ol {
+  float: left;
+}
+
+
     #portfolio > h1 {
       text-align: center;
       padding-top: 5%;
-      padding-bottom: 0;
+      padding-bottom: 10%;
     }
 
     #sample-one {
@@ -173,6 +182,12 @@ h1 {
   background-color: rgba(73, 124, 173, 0.7);
   border-radius: 15%;
   padding: 0;
+}
+
+#sample-one > p, #sample-two > p, #sample-three > p {
+  background-color: grey;
+  width: 75%;
+  margin-left: 9%;
 }
 
 #contact-me {
