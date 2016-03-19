@@ -24,8 +24,11 @@ li {
   padding-top: 10px;
   padding-right: 50px;
   text-align: left;
+  cursor: pointer;
+  cursor: hand;
   // background-color: rgb(143, 56, 189);
 }
+
 
 h1 {
   // padding: 0;
@@ -37,11 +40,12 @@ h1 {
   position: fixed;
   background-color: #497CAD;
   border-radius: 6px;
-  height: 75vh;
-  padding-top: 10%;
+  height: 200px;
+  margin-top: 150px;
   transition: all 0.5s ease;
   color: white;
-  border: 1px white solid;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+
 }
 
 
@@ -74,8 +78,17 @@ h1 {
     border: 1px black solid;
   }
 
+  #recommendation {
+    width: 50%;
+    margin: 0 0 0 50%;
+    background-color: green;
+    text-align: left;
+    font-size: 2em;
+    padding: 10px;
+  }
+
 #about-me {
-  background-color: rgba(134,175,175,0.7);
+  background-color: #EDECEC;
   width: 100%;
   height: 100vh;
 }
@@ -94,8 +107,8 @@ h1 {
       float: left;
       margin-left: 20%;
       height: 50%;
-      border: 2px #0085E6 solid;
-      border-radius: 50%;
+      border: 3px #0082E3 solid;
+      border-radius: 6px;
     }
 
     #bio {

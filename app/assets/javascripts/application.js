@@ -17,6 +17,7 @@
 
 $(document).ready(function () {
 
+
 // effect that adds padding left to #nav and #body when mouse hovers over
   $("#nav").hover(
     function() {
