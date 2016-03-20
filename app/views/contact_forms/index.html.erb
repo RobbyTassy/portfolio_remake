@@ -27,7 +27,7 @@
   </div>
 
   <div id="bio">
-    <h2>About me...</h2>
+    <h2>Your guess is as good as mine.</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Praesent vulputate eu ante eu maximus. Donec sed nunc pretium, vestibulum
       velit quis, congue nisi. Curabitur sed massa rhoncus, euismod nisi a, tristique justo.
@@ -74,34 +74,6 @@
           </li>
         </ol>
     </div>
-
-      <!-- <div id="sample-one">
-        <h2>World of Wyncraft</h2>
-        <p>
-           a read–eval–print loop (REPL) game made with Ruby code. In this game,
-           a user can select a Hero with a specfic amout of health and attack points
-           to battle with another player with specific health and attacks too.
-           There can only be one winner!
-        </p>
-      </div>
-      <div id="sample-two">
-        <h2>Voter Simulation</h2>
-        <p>
-          a read–eval–print loop (REPL) game made with Ruby code. In this game,
-          a user can select a Hero with a specfic amout of health and attack points
-          to battle with another player with specific health and attacks too.
-          There can only be one winner!
-        </p>
-      </div>
-      <div id="sample-three">
-        <h2>Tip Calculator</h2>
-        <p>
-          a read–eval–print loop (REPL) game made with Ruby code. In this game,
-          a user can select a Hero with a specfic amout of health and attack points
-          to battle with another player with specific health and attacks too.
-          There can only be one winner!
-        </p>
-      </div> -->
 </div>
 
 
@@ -109,37 +81,15 @@
   <div id="formbox">
     <%= render 'form' %>
   </div>
+    <ol id="socialmedia">
+      <li id="socialmedia-list"><img src="<%= asset_path('black-github-icon.png') %>" alt="Github" height="75" width="75"></li>
+      <li id="socialmedia-list"><img src="<%= asset_path('black-linkedin-icon.png') %>" alt="Linkedin" height="75" width="75"></li>
+      <li id="socialmedia-list"><img src="<%= asset_path('black-twitter-icon.png') %>" alt="Twitter" height="75" width="75"></li>
+      <li id="socialmedia-list"><img src="<%= asset_path('black-facebook-icon.png') %>" alt="Facebook" height="75" width="75"></li>
+    </ol>
+  </div>
+  </div>
+</div>
 
-
-
-    <!-- <table>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th>Message</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @contact_forms.each do |contact_form| %>
-          <tr>
-            <td><%= contact_form.firstName %></td>
-            <td><%= contact_form.lastName %></td>
-            <td><%= contact_form.email %></td>
-            <td><%= contact_form.message %></td>
-            <td><%= link_to 'Show', contact_form %></td>
-            <td><%= link_to 'Edit', edit_contact_form_path(contact_form) %></td>
-            <td><%= link_to 'Destroy', contact_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-
-    <br>
-
-    <%= link_to 'New Contact form', new_contact_form_path %> -->
 
 </div>
