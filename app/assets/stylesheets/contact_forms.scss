@@ -177,77 +177,12 @@ h1 {
       font-size: 18px;
     }
 
-    .travelpal {
-      // background: url(image_path('travelpal.png'));
-      // background-size: cover;
-      // width: 251px;
-      // height: 100px;
-    }
-
-//     #sample-one {
-//       background: url(image_path('worldofWyncraft.png'));
-//       background-size:auto;
-//       margin: 0 auto;
-//       width: 25%;
-//       float: left;
-//       margin: 5% 1% 0 15%;
-//       text-align: center;
-//       border: 1px white solid;
-//       border-top-left-radius: 50px;
-//       border-bottom-right-radius: 50px;
-//       padding: 1%;
-//     }
-//
-//     #sample-two {
-//       background: url(image_path('worldofWyncraft.png'));
-//       background-size:auto;
-//       margin: 0 auto;
-//       width: 25%;
-//       float: left;
-//       margin: 5% 1% 0 0;
-//       text-align: center;
-//       border: 1px white solid;
-//       border-top-left-radius: 50px;
-//       border-bottom-right-radius: 50px;
-//       padding: 1%;
-//     }
-//
-//     #sample-three {
-//       background: url(image_path('worldofWyncraft.png'));
-//       background-size:auto;
-//       margin: 0 auto;
-//       width: 25%;
-//       float: left;
-//       margin: 5% 0 0 0;
-//       text-align: center;
-//       border: 1px white solid;
-//       border-top-left-radius: 50px;
-//       border-bottom-right-radius: 50px;
-//       padding: 1%;
-//     }
-//
-// #sample-one > h2, #sample-two > h2, #sample-three > h2 {
-//   margin: 5% 5% 5% auto;
-//   font-size: 4em;
-//   color: white;
-//   background-color: rgba(73, 124, 173, 0.7);
-//   border-radius: 15%;
-//   padding: 0;
-// }
-//
-// #sample-one > p, #sample-two > p, #sample-three > p {
-//   background-color: grey;
-//   width: 75%;
-//   margin-left: 9%;
-// }
-
 #contact-me {
   background: url(image_path('contactme.jpg'));
   background-position: 0% 100%;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  // padding: 50px;
 
 }
 
@@ -265,20 +200,25 @@ h1 {
       width: 100%;
       // height: 100%;
       text-align: center;
-      padding: 10% 10% 0 0;
+      padding: 5% 10% 0 0;
     }
 
 #contactform {
   border-radius: 6px;
   background-color: rgb(101,185,130);
-  width: 200px;
-  height: 166px;
-  padding: 10px 20px 60px 10px;
-  border: 2px black solid;
-  margin-left: 400px;
-
+  width: 500px;
+  height: 300px;
+  padding: 40px 0 0 200px;
+  border: .5px black solid;
+  // margin-left: 400px;
 }
 
+#textboxid {
+    height:30px;
+    width: 300px;
+    font-size:14pt;
+    border-radius: 6px;
+}
 
 footer {
   position: relative;
@@ -289,7 +229,6 @@ footer {
 
 
 // MEDIA QUERIES BEGIN HERE
-
 // 4K
 @media only screen and (max-device-width: 2560px) {
 

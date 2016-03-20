@@ -15,21 +15,21 @@
 
       <div class="field">
         <%= f.label :First_Name %><br>
-        <%= f.text_field :firstName %>
+        <%= f.text_field :firstName, :id => "textboxid" %>
       </div>
       <div class="field">
         <%= f.label :Last_Name %><br>
-        <%= f.text_field :lastName %>
+        <%= f.text_field :lastName, :id => "textboxid"  %>
       </div>
       <div class="field">
         <%= f.label :Email %><br>
-        <%= f.text_field :email %>
+        <%= f.text_field :email, :id => "textboxid"  %>
       </div>
       <div class="field">
         <%= f.label :Message %><br>
-        <%= f.text_field :message %>
+        <%= f.text_field :message, :id => "textboxid"  %>
       </div>
-      <div class="actions">
+      <div class="actions"><br>
         <%= f.submit 'Contact Robby' %>
       </div>
     <% end %>
