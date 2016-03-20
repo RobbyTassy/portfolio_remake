@@ -26,15 +26,16 @@
       <div class="field">
         <!-- <%= f.label :Email %> -->
         <br>
-        <%= f.text_field :email, :id => "textboxid", :placeholder => "Email"  %>
+        <%= f.email_field :email, :id => "textboxid", :placeholder => "Email"  %>
       </div>
       <div class="field">
         <!-- <%= f.label :Message %> -->
         <br>
-        <%= f.text_field :message, :id => "textboxid", :placeholder => "Message"  %>
+        <%= f.text_area :message, :id => "textboxid-message", :placeholder => "Message"  %>
       </div>
-      <div class="actions"><br>
+      <div class="actions">
         <%= f.submit 'Contact Robby' %>
+        <br>
       </div>
     <% end %>
 </div>
