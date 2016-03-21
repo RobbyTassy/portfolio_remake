@@ -50,6 +50,7 @@ h1 {
   transition: all 0.5s ease;
   color: white;
   box-shadow:0 0 20px rgba(0,0,0,0.8);
+  left: -125px;
 }
 
 
@@ -248,13 +249,6 @@ h1 {
 
 }
 
-//
-// footer {
-//   position: relative;
-//   background-color: grey;
-//   color: white;
-//   padding-left: 50%;
-// }
 
 #socialmedia {
   padding-left: 250px;
@@ -274,102 +268,21 @@ h1 {
 // 4K
 @media only screen and (max-device-width: 2560px) {
 
-   #nav {
-     left: -3%;
-   }
-
-   #contact-me > h1 {
-     padding: 0 6% 0 0;
-   }
 	}
 
 // Laptop L
 @media only screen and (max-device-width: 1440px) {
 
-    #contact-me > h1 {
-      padding: 0 3% 0 0;
-    }
-
-    #nav {
-      left: -9%;
-    }
   }
 
 // Laptop
 @media only screen and (max-device-width: 1024px) {
 
-    #nav {
-      left: -8%;
-    }
-
-    #top_div > h1 {
-      text-align: center;
-      background-color: blue;
-      width: 50%;
-      margin: 30% 30%;
-    }
 	}
 
 // Tablet
 @media only screen and (max-device-width: 768px) {
 
-
-    #top_div > h1 {
-      text-align: center;
-      background-color: blue;
-      width: 50%;
-      margin: 30% 15%;
-    }
-
-    #picture {
-      background-color: white;
-      width: 20%;
-      float: left;
-      height: 30%;
-    }
-
-    #bio {
-      background-color: blue;
-      width: 40%;
-      float: left;
-      height: 45%;
-    }
-
-    #sample-one {
-      margin: 10% auto;
-      background-color: red;
-      width: 20%;
-      float: left;
-      display:inline-block;
-      margin-left: 15%;
-      height: 40%;
-    }
-
-    #sample-two {
-      margin: 10% auto;
-      background-color: white;
-      width: 20%;
-      float: left;
-      display:inline-block;
-      height: 40%;
-    }
-
-    #sample-three {
-      margin: 10% auto;
-      background-color: blue;
-      width: 20%;
-      float:left;
-      display:inline-block;
-      height: 40%;
-    }
-
-    #formbox {
-      background-color: maroon;
-      width: 50%;
-      margin: 10% 20%;
-      text-align: center;
-      height: 50%;
-    }
 
   }
 
@@ -377,177 +290,18 @@ h1 {
 @media only screen and (max-device-width: 425px) {
 
 
-    #top_div {
-      height: 100vh;
-    }
-
-    #top_div > h1 {
-      text-align: center;
-      background-color: blue;
-      width: 20%;
-      margin: 30% 45%;
-    }
-
-    #about-me {
-      height: 60vh;
-    }
-
-      #picture {
-        padding-top: 2%;
-        padding-bottom: 1%;
-        background-color: white;
-        width: 50%;
-        margin-left: 30%;
-        height: 20%;
-      }
-
-      #bio {
-        background-color: blue;
-        width: 50%;
-        clear:left;
-        height: 40%;
-        margin-left: 30%;
-      }
-
-    #portfolio {
-      height: 70vh;
-    }
-
-      #sample-one {
-        margin: 10% auto;
-        background-color: red;
-        width: 50%;
-        margin-left: 30%;
-        height: 25%;
-        margin-bottom: 0;
-      }
-
-      #sample-two {
-        margin-top: 0;
-        margin-left: 30%;
-        background-color: white;
-        width: 50%;
-        clear: left;
-        height: 25%;
-        margin-bottom: 0;
-      }
-
-      #sample-three {
-        margin-top: 0;
-        margin-left: 30%;
-        background-color: blue;
-        width: 50%;
-        clear: left;
-        height: 25%;
-        margin-bottom: 0;
-      }
-
-    #contact-me {
-      height: 50vh;
-    }
-
-    #formbox {
-      background-color: maroon;
-      width: 30%;
-      margin: 5% 40%;
-      text-align: center;
-      height: 50%;
-    }
-
   }
 
 
 // Mobile M
-// about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 375px) {
 
-  #top_div {
-    height: 100vh;
-  }
-
-  #top_div > h1 {
-    text-align: center;
-    background-color: blue;
-    width: 20%;
-    margin: 30% 35%;
-  }
-
-  #about-me {
-    height: 60vh;
-  }
-
-    #picture {
-      padding-top: 2%;
-      padding-bottom: 1%;
-      background-color: white;
-      width: 50%;
-      margin-left: 25%;
-      height: 20%;
-    }
-
-    #bio {
-      background-color: blue;
-      width: 50%;
-      clear:left;
-      height: 40%;
-      margin-left: 25%;
-    }
-
-  #portfolio {
-    height: 70vh;
-  }
-
-    #sample-one {
-      margin: 10% auto;
-      background-color: red;
-      width: 50%;
-      margin-left: 25%;
-      height: 25%;
-      margin-bottom: 0;
-    }
-
-    #sample-two {
-      margin-top: 0;
-      margin-left: 25%;
-      background-color: white;
-      width: 50%;
-      clear: left;
-      height: 25%;
-      margin-bottom: 0;
-    }
-
-    #sample-three {
-      margin-top: 0;
-      margin-left: 25%;
-      background-color: blue;
-      width: 50%;
-      clear: left;
-      height: 25%;
-      margin-bottom: 0;
-    }
-
-  #contact-me {
-    height: 50vh;
-  }
-
-  #formbox {
-    background-color: maroon;
-    width: 30%;
-    margin: 5% 35%;
-    text-align: center;
-    height: 50%;
-  }
 
 }
 
-
 // Mobile S
-// about, portfolio, contact link are scroll past when clicked
 @media only screen and (max-device-width: 320px) {
 
-  #top_div {
-    height: 100vh;
-  }
 
   }
 
