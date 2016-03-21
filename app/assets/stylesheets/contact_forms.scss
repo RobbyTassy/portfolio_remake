@@ -44,7 +44,7 @@ li {
   transition: all 0.5s ease;
   color: white;
   box-shadow:0 0 20px rgba(0,0,0,0.8);
-  left: -125px;
+  left: -90px;
 }
 
 
@@ -275,7 +275,6 @@ li {
 
   }
 
-
 // Mobile M
 @media only screen and (max-device-width: 375px) {
 
@@ -284,7 +283,6 @@ li {
 
 // Mobile S
 @media only screen and (max-device-width: 320px) {
-
 
 // FIRST DIV: HOME
   #nav {
@@ -357,7 +355,7 @@ li {
 #about-me {
   background: url(image_path('aboutmebg.png'));
   background-size: cover;
-  width: 119%;
+  width: 120%;
   height: 100vh;
   font-size: 20px;
   padding-top: 100px;
@@ -405,7 +403,7 @@ li {
   background-position: 0 100%;
   background-size: cover;
   margin: 0;
-  width: 119%;
+  width: 120%;
   height: 100vh;
 }
 
@@ -417,8 +415,8 @@ li {
     }
 
     #mywork {
-      margin: 10% 0 0 5%;
-      width: 100%;
+      margin: 5% 0 0 5%;
+      width: 85%;
       height: 50%;
       text-align: center;
       padding-left: 120px;
@@ -459,7 +457,7 @@ li {
   background-position: 60% 100%;
   background-size: cover;
   height: 100vh;
-  width: 118%;
+  width: 120%;
 }
 
     #formbox> h1 {
