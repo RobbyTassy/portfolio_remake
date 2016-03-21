@@ -283,7 +283,6 @@ li {
 
 // Mobile S
 @media only screen and (max-device-width: 320px) {
-
 // FIRST DIV: HOME
   #nav {
     z-index: 100;
@@ -295,7 +294,7 @@ li {
     transition: all 0.5s ease;
     color: white;
     box-shadow:0 0 20px rgba(0,0,0,0.8);
-    left: 10%;
+    left: 0;
     // ^Moved side nav out completely
   }
 
@@ -335,7 +334,7 @@ li {
 
     #recommendation {
       width: 80%;
-      margin: 100px 0 0 120px;
+      margin: 190px 0 0 120px;
       text-align: center;
       font-size: 55px;
       padding: 0px;
@@ -351,7 +350,6 @@ li {
 // END OF FIRST DIV: HOME
 
 //SECOND DIV: ABOUT ME
-
 #about-me {
   background: url(image_path('aboutmebg.png'));
   background-size: cover;
@@ -393,11 +391,9 @@ li {
       color: white;
       font-size: 40px;
     }
-
 //END OF SECON DIV: ABOUT ME
 
 // THIRD DIV: PORTFOLIO
-
 #portfolio {
   background: url(image_path('portfolio.png'));
   background-position: 0 100%;
@@ -420,13 +416,15 @@ li {
       height: 50%;
       text-align: center;
       padding-left: 120px;
+      padding-bottom: 100px;
     }
 
     #mywork > ol {
       list-style-type: none;
       float: none;
-      padding-right: 0;
+      padding-bottom: 0;
       width: 75%;
+      height: 75%;
     }
 
     #mywork > ol >  li {
@@ -441,14 +439,13 @@ li {
     }
 
     #mywork > ol >  li:hover {
-      border: 1px white  solid;
+      border: 1px white solid;
       color: white;
     }
 
     #mywork > ol > li > p {
       font-size: 30px;
     }
-
 // END OF THIRD DIV: PORTFOLIO
 
 // FOURTH/LAST DIV: CONTACT ME
@@ -459,11 +456,6 @@ li {
   height: 100vh;
   width: 120%;
 }
-
-    #formbox> h1 {
-      text-align: center;
-      color: white;
-    }
 
     #formbox {
       color: white;
@@ -482,6 +474,12 @@ li {
   margin: 30px 0 0 150px;
   padding: 90px 15px 0 15px;
 }
+
+  #contactform > h1 {
+    text-align: center;
+    color: white;
+    font-size: 90px;
+  }
 
 #textboxid {
     height:90px;
