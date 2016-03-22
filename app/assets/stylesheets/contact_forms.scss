@@ -247,41 +247,530 @@ li {
 }
 
 
-// MEDIA QUERIES BEGIN HERE
-// 4K
+
+// MEDIA QUIERIES BEGIN ================================================================================
+
+
+// _  _   _  __       ___  _  _     __   ___  _______   __
+// | || | | |/ /      |__ \| || |   / /  / _ \|  __ \ \ / /
+// | || |_| ' /_____     ) | || |_ / /_ | | | | |__) \ V /
+// |__   _|  <______|   / /|__   _| '_ \| | | |  ___/ > <
+//   | | | . \        / /_   | | | (_) | |_| | |    / . \
+//   |_| |_|\_\      |____|  |_|  \___/ \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 2560px) {
 
 	}
 
-// Laptop L
+ //  _               _____ _______ ____  _____    _                 __ _  _   _  _    ___  _______   __
+ // | |        /\   |  __ \__   __/ __ \|  __ \  | |               /_ | || | | || |  / _ \|  __ \ \ / /
+ // | |       /  \  | |__) | | | | |  | | |__) | | |       ______   | | || |_| || |_| | | | |__) \ V /
+ // | |      / /\ \ |  ___/  | | | |  | |  ___/  | |      |______|  | |__   _|__   _| | | |  ___/ > <
+ // | |____ / ____ \| |      | | | |__| | |      | |____            | |  | |    | | | |_| | |    / . \
+ // |______/_/    \_\_|      |_|  \____/|_|      |______|           |_|  |_|    |_|  \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 1440px) {
 
   }
 
-// Laptop
+ //  _               _____ _______ ____  _____             __  ___ ___  _  _   _______   __
+ // | |        /\   |  __ \__   __/ __ \|  __ \           /_ |/ _ \__ \| || | |  __ \ \ / /
+ // | |       /  \  | |__) | | | | |  | | |__) |  ______   | | | | | ) | || |_| |__) \ V /
+ // | |      / /\ \ |  ___/  | | | |  | |  ___/  |______|  | | | | |/ /|__   _|  ___/ > <
+ // | |____ / ____ \| |      | | | |__| | |                | | |_| / /_   | | | |    / . \
+ // |______/_/    \_\_|      |_|  \____/|_|                |_|\___/____|  |_| |_|   /_/ \_\
 @media only screen and (max-device-width: 1024px) {
 
 	}
 
-// Tablet
+ //  _______       ____  _      ______ _______            ______ __   ___  _______   __
+ // |__   __|/\   |  _ \| |    |  ____|__   __|          |____  / /  / _ \|  __ \ \ / /
+ //    | |  /  \  | |_) | |    | |__     | |     ______      / / /_ | (_) | |__) \ V /
+ //    | | / /\ \ |  _ <| |    |  __|    | |    |______|    / / '_ \ > _ <|  ___/ > <
+ //    | |/ ____ \| |_) | |____| |____   | |               / /| (_) | (_) | |    / . \
+ //    |_/_/    \_\____/|______|______|  |_|              /_/  \___/ \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 768px) {
 
 
   }
 
-// Mobile L
+ //  __  __  ____  ____ _____ _      ______   _                 _  _ ___  _____ _______   __
+ // |  \/  |/ __ \|  _ \_   _| |    |  ____| | |               | || |__ \| ____|  __ \ \ / /
+ // | \  / | |  | | |_) || | | |    | |__    | |       ______  | || |_ ) | |__ | |__) \ V /
+ // | |\/| | |  | |  _ < | | | |    |  __|   | |      |______| |__   _/ /|___ \|  ___/ > <
+ // | |  | | |__| | |_) || |_| |____| |____  | |____              | |/ /_ ___) | |    / . \
+ // |_|  |_|\____/|____/_____|______|______| |______|             |_|____|____/|_|   /_/ \_\
 @media only screen and (max-device-width: 425px) {
+  // FIRST DIV: HOME
+    #nav {
+      z-index: 100;
+      position: fixed;
+      background-color: #497CAD;
+      border-radius: 6px;
+      height: 0;
+      width: 0;
+      transition: all 0.5s ease;
+      color: white;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      left: 0;
+      // ^Moved side nav out completely
+    }
 
+    #menu {
+      font-size: 0;
+    }
 
+    .toggled {
+      padding-left: 10%;
+    }
+
+    #top_div {
+      background: url(image_path('top_div.png'));
+      background-position: 15% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 10px;
+      height: 100vh;
+      width: 118%;
+    }
+
+      #top_div > h1 {
+        line-height: .8em;
+        text-align: center;
+        width: 100%;
+        padding-top: 60px;
+        margin: 0 0 0 0;
+        color: white;
+        font-size: 250px;
+        border-bottom: 0px white solid;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+      #recommendation {
+        width: 80%;
+        margin: 140px 0 0 120px;
+        text-align: center;
+        font-size: 45px;
+        padding: 0px;
+        color: white;
+      }
+
+          #recommendation > li {
+            background-color: rgba(0,128,226, 0.4);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 15px;
+          }
+  // END OF FIRST DIV: HOME
+
+  //SECOND DIV: ABOUT ME
+  #about-me {
+    background: url(image_path('aboutmebg.png'));
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-// Mobile M
+      #about-me > h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      #picture {
+        padding-top: 0;
+        background: url(image_path('aboutmepic.jpg'));
+        background-position: 0 2%;
+        background-size: cover;
+        width: 900px;
+        float: none;
+        margin: 0 0 0 10%;
+        height: 50%;
+        border: 4px #0080E2 solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #bio {
+        padding: 50px;
+        background-color: rgba(0,128,226, 0.8);
+        margin: 0 5% 5% 10%;
+        width: 800px;
+        float: left;
+        height: 500px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        font-size: 35px;
+      }
+  //END OF SECON DIV: ABOUT ME
+
+  // THIRD DIV: PORTFOLIO
+  #portfolio {
+    background: url(image_path('portfolio.png'));
+    background-position: 0 100%;
+    background-size: cover;
+    margin: 0;
+    width: 120%;
+    height: 100vh;
+  }
+
+      #portfolio > h1 {
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+        font-size: 100px;
+      }
+
+      #mywork {
+        margin: 3% 0 5% 5%;
+        width: 85%;
+        height: 100%;
+        text-align: center;
+        padding-left: 80px;
+        padding-bottom: 100px;
+      }
+
+      #mywork > ol {
+        list-style-type: none;
+        float: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 90%;
+        height: 45%;
+      }
+
+      #mywork > ol >  li {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,128,226, 0.4);
+        color: white;
+        border: 1px transparent solid;
+        margin-bottom: 25px;
+        font-size: 40px;
+        border-radius: 6px;
+      }
+
+      #mywork > ol >  li:hover {
+        border: 1px white solid;
+        color: white;
+      }
+
+      #mywork > ol > li > p {
+        font-size: 30px;
+      }
+  // END OF THIRD DIV: PORTFOLIO
+
+  // FOURTH/LAST DIV: CONTACT ME
+  #contact-me {
+    background: url(image_path('contactme.jpg'));
+    background-position: 60% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 120%;
+  }
+
+  #formbox {
+    color: white;
+    // background-color: maroon;
+    width: 800px;
+    height: 950px;
+    text-align: center;
+    padding: 20% 10% 0 0;
+  }
+
+  #contactform {
+    border-radius: 15px;
+    background-color: rgba(101,185,130,0.8);
+    width: 800px;
+    height: 800px;
+    margin: 0 0 0 150px;
+    padding: 90px 15px 0 15px;
+  }
+
+    #contactform > h1 {
+      text-align: center;
+      color: white;
+      font-size: 90px;
+    }
+
+  #textboxid {
+      height:90px;
+      width: 600px;
+      font-size:30pt;
+      border-radius: 6px;
+  }
+
+  #textboxid-message {
+    height: 150px;
+    width: 600px;
+    font-size:30pt;
+    border-radius: 6px;
+  }
+
+  #socialmedia {
+    padding-left: 200px;
+  }
+
+  #socialmedia-list {
+    padding: 10px;
+    background-color: rgb(101,185,130);
+    display: inline;
+    float: left;
+    border-radius: 50%;
+  }
+  // END OF FOURTH/LAST DIV: CONTACT ME
+  }
+
+
+ //  __  __  ____  ____ _____ _      ______   __  __            ____ ______ _____ _______   __
+ // |  \/  |/ __ \|  _ \_   _| |    |  ____| |  \/  |          |___ \____  | ____|  __ \ \ / /
+ // | \  / | |  | | |_) || | | |    | |__    | \  / |  ______    __) |  / /| |__ | |__) \ V /
+ // | |\/| | |  | |  _ < | | | |    |  __|   | |\/| | |______|  |__ <  / / |___ \|  ___/ > <
+ // | |  | | |__| | |_) || |_| |____| |____  | |  | |           ___) |/ /   ___) | |    / . \
+ // |_|  |_|\____/|____/_____|______|______| |_|  |_|          |____//_/   |____/|_|   /_/ \_\
+
 @media only screen and (max-device-width: 375px) {
+  // FIRST DIV: HOME
+    #nav {
+      z-index: 100;
+      position: fixed;
+      background-color: #497CAD;
+      border-radius: 6px;
+      height: 0;
+      width: 0;
+      transition: all 0.5s ease;
+      color: white;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      left: 0;
+      // ^Moved side nav out completely
+    }
 
+    #menu {
+      font-size: 0;
+    }
 
+    .toggled {
+      padding-left: 10%;
+    }
+
+    #top_div {
+      background: url(image_path('top_div.png'));
+      background-position: 20% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 10px;
+      height: 100vh;
+      width: 118%;
+    }
+
+      #top_div > h1 {
+        line-height: .8em;
+        text-align: center;
+        width: 100%;
+        padding-top: 60px;
+        margin: 0 0 0 0;
+        color: white;
+        font-size: 250px;
+        border-bottom: 0px white solid;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+      #recommendation {
+        width: 80%;
+        margin: 190px 0 0 120px;
+        text-align: center;
+        font-size: 55px;
+        padding: 0px;
+        color: white;
+      }
+
+          #recommendation > li {
+            background-color: rgba(0,128,226, 0.4);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 15px;
+          }
+  // END OF FIRST DIV: HOME
+
+  //SECOND DIV: ABOUT ME
+  #about-me {
+    background: url(image_path('aboutmebg.png'));
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    font-size: 20px;
+    padding-top: 100px;
+  }
+
+      #about-me > h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      #picture {
+        padding-top: 0;
+        background: url(image_path('aboutmepic.jpg'));
+        background-position: 0 5%;
+        background-size: cover;
+        width: 1000px;
+        float: none;
+        margin: 0 0 0 5%;
+        height: 50%;
+        border: 4px #0080E2 solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #bio {
+        padding: 50px;
+        background-color: rgba(0,128,226, 0.8);
+        margin: 0 5% 5% 5%;
+        width: 900px;
+        float: left;
+        height: 600px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        font-size: 40px;
+      }
+  //END OF SECON DIV: ABOUT ME
+
+  // THIRD DIV: PORTFOLIO
+  #portfolio {
+    background: url(image_path('portfolio.png'));
+    background-position: 0 100%;
+    background-size: cover;
+    margin: 0;
+    width: 120%;
+    height: 100vh;
+  }
+
+      #portfolio > h1 {
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+        font-size: 100px;
+      }
+
+      #mywork {
+        margin: 3% 0 5% 5%;
+        width: 85%;
+        height: 50%;
+        text-align: center;
+        padding-left: 80px;
+        padding-bottom: 100px;
+      }
+
+      #mywork > ol {
+        list-style-type: none;
+        float: none;
+        padding-bottom: 0;
+        width: 90%;
+        height: 78%;
+      }
+
+      #mywork > ol >  li {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,128,226, 0.4);
+        color: white;
+        border: 1px transparent solid;
+        margin-bottom: 25px;
+        font-size: 40px;
+        border-radius: 6px;
+      }
+
+      #mywork > ol >  li:hover {
+        border: 1px white solid;
+        color: white;
+      }
+
+      #mywork > ol > li > p {
+        font-size: 30px;
+      }
+  // END OF THIRD DIV: PORTFOLIO
+
+  // FOURTH/LAST DIV: CONTACT ME
+  #contact-me {
+    background: url(image_path('contactme.jpg'));
+    background-position: 60% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 120%;
+  }
+
+  #formbox {
+    color: white;
+    // background-color: maroon;
+    width: 800px;
+    height: 950px;
+    text-align: center;
+    padding: 20% 10% 0 0;
+  }
+
+  #contactform {
+    border-radius: 15px;
+    background-color: rgba(101,185,130,0.8);
+    width: 800px;
+    height: 800px;
+    margin: 0 0 0 150px;
+    padding: 90px 15px 0 15px;
+  }
+
+    #contactform > h1 {
+      text-align: center;
+      color: white;
+      font-size: 90px;
+    }
+
+  #textboxid {
+      height:90px;
+      width: 600px;
+      font-size:30pt;
+      border-radius: 6px;
+  }
+
+  #textboxid-message {
+    height: 150px;
+    width: 600px;
+    font-size:30pt;
+    border-radius: 6px;
+  }
+
+  #socialmedia {
+    padding-left: 200px;
+  }
+
+  #socialmedia-list {
+    padding: 10px;
+    background-color: rgb(101,185,130);
+    display: inline;
+    float: left;
+    border-radius: 50%;
+  }
+  // END OF FOURTH/LAST DIV: CONTACT ME
 }
 
-// Mobile S
+
+
+// __  __  ____  ____ _____ _      ______    _____            ____ ___   ___  _______   __
+// |  \/  |/ __ \|  _ \_   _| |    |  ____|  / ____|          |___ \__ \ / _ \|  __ \ \ / /
+// | \  / | |  | | |_) || | | |    | |__    | (___    ______    __) | ) | | | | |__) \ V /
+// | |\/| | |  | |  _ < | | | |    |  __|    \___ \  |______|  |__ < / /| | | |  ___/ > <
+// | |  | | |__| | |_) || |_| |____| |____   ____) |           ___) / /_| |_| | |    / . \
+// |_|  |_|\____/|____/_____|______|______| |_____/           |____/____|\___/|_|   /_/ \_\
+
 @media only screen and (max-device-width: 320px) {
 // FIRST DIV: HOME
   #nav {
@@ -507,6 +996,6 @@ li {
   border-radius: 50%;
 }
 // END OF FOURTH/LAST DIV: CONTACT ME
-
   }
-// MEDIA QUERIES END HERE
+
+// MEDIA QUIERIES END================================================================================
