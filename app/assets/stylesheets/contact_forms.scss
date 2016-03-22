@@ -29,226 +29,236 @@ li {
   list-style-type: none;
 }
 
-#menu {
-  font-size: 2em;
-}
-
-
-#nav {
-  z-index: 100;
-  position: fixed;
-  background-color: #497CAD;
-  border-radius: 6px;
-  height: 200px;
-  margin-top: 150px;
-  transition: all 0.5s ease;
-  color: white;
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  left: -125px;
-}
-
-
-.toggled {
-  padding-left: 10%;
-}
-
-#body {
-  transition: all 0.5s ease;
-}
-
-#top_div {
-  background: url(image_path('top_div.png'));
-  background-position: 0% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px;
-  height: 100vh;
-}
-
-  #top_div > h1 {
-    text-align: center;
-    width: 50%;
-    padding: 10px;
-    margin: 3% 0 10px 50%;
-    color: white;
-    font-size: 100px;
-    border-bottom: 2px white solid;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+// FIRST DIV: HOME
+  #menu {
+    font-size: 2em;
   }
 
-  #recommendation {
-    width: 40%;
-    margin: 0 0 0 55%;
-    // background-color: white;
-    text-align: left;
-    font-size: 25px;
-    padding: 10px;
+  #nav {
+    z-index: 100;
+    position: fixed;
+    background-color: #497CAD;
+    border-radius: 6px;
+    height: 200px;
+    margin-top: 150px;
+    transition: all 0.5s ease;
     color: white;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    left: -100px;
   }
 
-      #recommendation > li {
-        background-color: rgba(0,128,226, 0.4);
-        margin-bottom: 10px;
-        border-radius: 6px;
-        padding: 15px;
+
+  .toggled {
+    padding-left: 10%;
+  }
+
+  #body {
+    transition: all 0.5s ease;
+  }
+
+  #top_div {
+    background: url(image_path('top_div.png'));
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    height: 100vh;
+  }
+
+    #top_div > h1 {
+      text-align: center;
+      width: 50%;
+      padding: 10px;
+      margin: 3% 0 10px 50%;
+      color: white;
+      font-size: 100px;
+      border-bottom: 2px white solid;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    }
+
+    #recommendation {
+      width: 40%;
+      margin: 0 0 0 55%;
+      // background-color: white;
+      text-align: left;
+      font-size: 25px;
+      padding: 10px;
+      color: white;
+    }
+
+        #recommendation > li {
+          background-color: rgba(0,128,226, 0.4);
+          margin-bottom: 10px;
+          border-radius: 6px;
+          padding: 15px;
+        }
+
+//FIRST DIV ENDS: HOME
+
+//SECOND DIV BEGINS: ABOUT
+
+  #about-me {
+    background: url(image_path('aboutmebg.png'));
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    padding-top: 150px;
+  }
+
+      #about-me > h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
       }
 
-#about-me {
-  background: url(image_path('aboutmebg.png'));
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  font-size: 20px;
-  padding-top: 150px;
-}
+      #picture {
+        padding-top: 2%;
+        background: url(image_path('aboutmepic.jpg'));
+        background-size: cover;
+        width: 25%;
+        float: left;
+        margin-left: 20%;
+        height: 50%;
+        border: 4px #0080E2 solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
 
-    #about-me > h1 {
-      text-align: center;
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
+      #bio {
+        padding: 5px;
+        background-color: rgba(0,128,226, 0.8);
+        width: 35%;
+        float: left;
+        height: 360px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+      }
 
-    #picture {
-      padding-top: 2%;
-      background: url(image_path('aboutmepic.jpg'));
-      background-size: cover;
-      width: 25%;
-      float: left;
-      margin-left: 20%;
-      height: 50%;
-      border: 4px #0080E2 solid;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-    }
+//SECOND DIV ENDS: ABOUT
 
-    #bio {
-      padding: 5px;
-      background-color: rgba(0,128,226, 0.8);
-      width: 35%;
-      float: left;
-      height: 360px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      color: white;
-    }
+//THIRD DIV BEGINS: PORTFOLIO
 
-#portfolio {
-  background: url(image_path('portfolio.png'));
-  background-position: 0 100%;
-  background-size: cover;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-}
+  #portfolio {
+    background: url(image_path('portfolio.png'));
+    background-position: 0 100%;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
 
-    #portfolio > h1 {
-      text-align: center;
-      padding-top: 40px;
-      color: white;
-    }
+      #portfolio > h1 {
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+      }
 
-    #mywork {
-      margin: 5% 0 0 5%;
-      width: 100%;
-      height: 50%;
-      text-align: center;
-      padding-left: 120px;
-    }
+      #mywork {
+        margin: 5% 0 0 5%;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        padding-left: 120px;
+      }
 
-    #mywork > ol {
-      list-style-type: none;
-      float: left;
-      padding-right: 35px;
-      width: 40%;
-    }
+      #mywork > ol {
+        list-style-type: none;
+        float: left;
+        padding-right: 35px;
+        width: 40%;
+      }
 
-    #mywork > ol >  li {
-      padding: 20px;
-      text-align: center;
-      background-color: rgba(0,128,226, 0.4);
-      color: white;
-      border: 1px transparent solid;
-      margin-bottom: 25px;
-      font-size: 25px;
+      #mywork > ol >  li {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,128,226, 0.4);
+        color: white;
+        border: 1px transparent solid;
+        margin-bottom: 25px;
+        font-size: 25px;
+        border-radius: 6px;
+      }
+
+      #mywork > ol >  li:hover {
+        border: 1px white  solid;
+        color: white;
+      }
+
+      #mywork > ol > li > p {
+        font-size: 18px;
+      }
+
+//THIRD DIV ENDS: PORTFOLIO
+
+//FOURTH DIV BEGINS: CONTACT
+
+  #contact-me {
+    background: url(image_path('contactme.jpg'));
+    background-position: 0% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+      #formbox> h1 {
+        text-align: center;
+        // padding-top: 20%;
+        // padding-bottom: 20%;
+        color: white;
+        // background-color: green;
+      }
+
+      #formbox {
+        color: white;
+        // background-color: maroon;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        padding: 5% 10% 0 0;
+      }
+
+  #contactform {
+    border-radius: 6px;
+    background-color: rgb(101,185,130);
+    width: 500px;
+    height: 350px;
+    padding: 20px 0 0 200px;
+    // border: .5px black solid;
+    // margin-left: 400px;
+  }
+
+  #textboxid {
+      height:30px;
+      width: 300px;
+      font-size:14pt;
       border-radius: 6px;
-    }
+  }
 
-    #mywork > ol >  li:hover {
-      border: 1px white  solid;
-      color: white;
-    }
-
-    #mywork > ol > li > p {
-      font-size: 18px;
-    }
-
-#contact-me {
-  background: url(image_path('contactme.jpg'));
-  background-position: 0% 100%;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
-
-    #formbox> h1 {
-      text-align: center;
-      // padding-top: 20%;
-      // padding-bottom: 20%;
-      color: white;
-      // background-color: green;
-    }
-
-    #formbox {
-      color: white;
-      // background-color: maroon;
-      width: 100%;
-      height: 60%;
-      text-align: center;
-      padding: 5% 10% 0 0;
-    }
-
-#contactform {
-  border-radius: 6px;
-  background-color: rgb(101,185,130);
-  width: 500px;
-  height: 350px;
-  padding: 20px 0 0 200px;
-  // border: .5px black solid;
-  // margin-left: 400px;
-}
-
-#textboxid {
-    height:30px;
+  #textboxid-message {
+    height: 90px;
     width: 300px;
     font-size:14pt;
-    border-radius: 6px;
-}
+  }
 
-#textboxid-message {
-  height: 90px;
-  width: 300px;
-  font-size:14pt;
-}
+  #socialmedia {
+    padding-left: 250px;
+  }
 
-#socialmedia {
-  padding-left: 250px;
-}
+  #socialmedia-list {
+    padding: 10px;
+    background-color: rgb(101,185,130);
+    display: inline;
+    float: left;
+    border-radius: 50%;
+  }
+  //FOURTH DIV ENDS: CONTACT
 
-#socialmedia-list {
-  padding: 10px;
-  background-color: rgb(101,185,130);
-  display: inline;
-  float: left;
-  border-radius: 50%;
-}
-
-
-
-// MEDIA QUIERIES BEGIN ================================================================================
 
 
 // _  _   _  __       ___  _  _     __   ___  _______   __
@@ -259,6 +269,236 @@ li {
 //   |_| |_|\_\      |____|  |_|  \___/ \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 2560px) {
 
+  // FIRST DIV: HOME
+    #menu {
+      font-size: 5em;
+    }
+
+    #nav {
+      z-index: 100;
+      position: fixed;
+      background-color: #497CAD;
+      border-radius: 6px;
+      height: 450px;
+      margin-top: 150px;
+      transition: all 0.5s ease;
+      color: white;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      left: -100px;
+    }
+
+    .toggled {
+      padding-left: 10%;
+    }
+
+    #body {
+      transition: all 0.5s ease;
+    }
+
+    #top_div {
+      background: url(image_path('top_div.png'));
+      background-position: 0% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 30px;
+      height: 100vh;
+    }
+
+      #top_div > h1 {
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        margin: 8% 0 10px 50%;
+        color: white;
+        font-size: 200px;
+        border-bottom: 2px white solid;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+      #recommendation {
+        width: 45%;
+        margin: 0 0 0 54%;
+        // background-color: white;
+        text-align: left;
+        font-size: 60px;
+        padding: 10px;
+        color: white;
+      }
+
+          #recommendation > li {
+            background-color: rgba(0,128,226, 0.4);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 25px;
+          }
+
+  //FIRST DIV ENDS: HOME
+
+  //SECOND DIV BEGINS: ABOUT
+
+    #about-me {
+      background: url(image_path('aboutmebg.png'));
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      font-size: 45px;
+      padding-top: 250px;
+    }
+
+        #about-me > h1 {
+          text-align: center;
+          padding-top: 5%;
+          padding-bottom: 5%;
+        }
+
+        #picture {
+          padding-top: 2%;
+          background: url(image_path('aboutmepic.jpg'));
+          background-size: cover;
+          width: 35%;
+          float: left;
+          margin-left: 20%;
+          height: 50%;
+          border: 4px #0080E2 solid;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        #bio {
+          padding: 15px;
+          background-color: rgba(0,128,226, 0.8);
+          width: 40%;
+          float: left;
+          height: 800px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          color: white;
+        }
+
+  //SECOND DIV ENDS: ABOUT
+
+  //THIRD DIV BEGINS: PORTFOLIO
+
+    #portfolio {
+      background: url(image_path('portfolio.png'));
+      background-position: 0 100%;
+      background-size: cover;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+        #portfolio > h1 {
+          text-align: center;
+          padding-top: 70px;
+          color: white;
+          font-size: 100px;
+        }
+
+        #mywork {
+          margin: 8% 0 0 5%;
+          width: 80%;
+          height: 50%;
+          text-align: center;
+          padding-left: 425px;
+        }
+
+        #mywork > ol {
+          list-style-type: none;
+          float: left;
+          padding-right: 35px;
+          width: 45%;
+        }
+
+        #mywork > ol >  li {
+          padding: 20px;
+          text-align: center;
+          background-color: rgba(0,128,226, 0.4);
+          color: white;
+          border: 1px transparent solid;
+          margin-bottom: 25px;
+          font-size: 55px;
+          border-radius: 6px;
+        }
+
+        #mywork > ol >  li:hover {
+          border: 1px white  solid;
+          color: white;
+        }
+
+        #mywork > ol > li > p {
+          font-size: 35px;
+        }
+
+  //THIRD DIV ENDS: PORTFOLIO
+
+  //FOURTH DIV BEGINS: CONTACT
+
+    #contact-me {
+      background: url(image_path('contactme.jpg'));
+      background-position: 0% 100%;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+        #formbox> h1 {
+          text-align: center;
+          // padding-top: 20%;
+          // padding-bottom: 20%;
+          color: white;
+          // background-color: green;
+        }
+
+        #formbox {
+          color: white;
+          // background-color: maroon;
+          width: 90%;
+          height: 70%;
+          text-align: center;
+          padding: 5% 10% 0 0;
+        }
+
+    #contactform {
+      border-radius: 6px;
+      background-color: rgba(101,185,130, 0.8);
+      width: 60%;
+      height: 1000px;
+      padding: 20px 0 0 0;
+      margin-left: 450px
+      // border: .5px black solid;
+      // margin-left: 400px;
+    }
+
+    #textboxid {
+        height:120px;
+        width: 1200px;
+        font-size:28pt;
+        border-radius: 6px;
+    }
+
+    #textboxid-message {
+      height: 320px;
+      width: 1200px;
+      font-size:28pt;
+    }
+
+    #socialmedia {
+      padding-left: 700px;
+    }
+
+    #socialmedia-list {
+      padding: 10px;
+      background-color: rgb(101,185,130);
+      display: inline;
+      float: left;
+      border-radius: 50%;
+    }
+    //FOURTH DIV ENDS: CONTACT
 	}
 
  //  _               _____ _______ ____  _____    _                 __ _  _   _  _    ___  _______   __
@@ -269,6 +509,235 @@ li {
  // |______/_/    \_\_|      |_|  \____/|_|      |______|           |_|  |_|    |_|  \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 1440px) {
 
+  // FIRST DIV: HOME
+    #menu {
+      font-size: 2em;
+    }
+
+    #nav {
+      z-index: 100;
+      position: fixed;
+      background-color: #497CAD;
+      border-radius: 6px;
+      height: 200px;
+      margin-top: 150px;
+      transition: all 0.5s ease;
+      color: white;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      left: -120px;
+    }
+
+
+    .toggled {
+      padding-left: 10%;
+    }
+
+    #body {
+      transition: all 0.5s ease;
+    }
+
+    #top_div {
+      background: url(image_path('top_div.png'));
+      background-position: 0% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 30px;
+      height: 100vh;
+    }
+
+      #top_div > h1 {
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        margin: 3% 0 10px 50%;
+        color: white;
+        font-size: 100px;
+        border-bottom: 2px white solid;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+      #recommendation {
+        width: 40%;
+        margin: 0 0 0 55%;
+        // background-color: white;
+        text-align: left;
+        font-size: 25px;
+        padding: 10px;
+        color: white;
+      }
+
+          #recommendation > li {
+            background-color: rgba(0,128,226, 0.4);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 15px;
+          }
+
+  //FIRST DIV ENDS: HOME
+
+  //SECOND DIV BEGINS: ABOUT
+
+    #about-me {
+      background: url(image_path('aboutmebg.png'));
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      font-size: 20px;
+      padding-top: 150px;
+    }
+
+        #about-me > h1 {
+          text-align: center;
+          padding-top: 5%;
+          padding-bottom: 5%;
+        }
+
+        #picture {
+          padding-top: 2%;
+          background: url(image_path('aboutmepic.jpg'));
+          background-size: cover;
+          width: 25%;
+          float: left;
+          margin-left: 20%;
+          height: 50%;
+          border: 4px #0080E2 solid;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        #bio {
+          padding: 5px;
+          background-color: rgba(0,128,226, 0.8);
+          width: 35%;
+          float: left;
+          height: 360px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          color: white;
+        }
+
+  //SECOND DIV ENDS: ABOUT
+
+  //THIRD DIV BEGINS: PORTFOLIO
+
+    #portfolio {
+      background: url(image_path('portfolio.png'));
+      background-position: 0 100%;
+      background-size: cover;
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+        #portfolio > h1 {
+          text-align: center;
+          padding-top: 40px;
+          color: white;
+        }
+
+        #mywork {
+          margin: 5% 0 0 5%;
+          width: 100%;
+          height: 50%;
+          text-align: center;
+          padding-left: 120px;
+        }
+
+        #mywork > ol {
+          list-style-type: none;
+          float: left;
+          padding-right: 35px;
+          width: 40%;
+        }
+
+        #mywork > ol >  li {
+          padding: 20px;
+          text-align: center;
+          background-color: rgba(0,128,226, 0.4);
+          color: white;
+          border: 1px transparent solid;
+          margin-bottom: 25px;
+          font-size: 25px;
+          border-radius: 6px;
+        }
+
+        #mywork > ol >  li:hover {
+          border: 1px white  solid;
+          color: white;
+        }
+
+        #mywork > ol > li > p {
+          font-size: 18px;
+        }
+
+  //THIRD DIV ENDS: PORTFOLIO
+
+  //FOURTH DIV BEGINS: CONTACT
+
+    #contact-me {
+      background: url(image_path('contactme.jpg'));
+      background-position: 0% 100%;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+        #formbox> h1 {
+          text-align: center;
+          // padding-top: 20%;
+          // padding-bottom: 20%;
+          color: white;
+          // background-color: green;
+        }
+
+        #formbox {
+          color: white;
+          // background-color: maroon;
+          width: 100%;
+          height: 60%;
+          text-align: center;
+          padding: 5% 10% 0 0;
+        }
+
+    #contactform {
+      border-radius: 6px;
+      background-color: rgb(101,185,130);
+      width: 500px;
+      height: 350px;
+      padding: 20px 0 0 200px;
+      // border: .5px black solid;
+      // margin-left: 400px;
+    }
+
+    #textboxid {
+        height:30px;
+        width: 300px;
+        font-size:14pt;
+        border-radius: 6px;
+    }
+
+    #textboxid-message {
+      height: 90px;
+      width: 300px;
+      font-size:14pt;
+    }
+
+    #socialmedia {
+      padding-left: 250px;
+    }
+
+    #socialmedia-list {
+      padding: 10px;
+      background-color: rgb(101,185,130);
+      display: inline;
+      float: left;
+      border-radius: 50%;
+    }
+    //FOURTH DIV ENDS: CONTACT
   }
 
  //  _               _____ _______ ____  _____             __  ___ ___  _  _   _______   __
@@ -279,7 +748,237 @@ li {
  // |______/_/    \_\_|      |_|  \____/|_|                |_|\___/____|  |_| |_|   /_/ \_\
 @media only screen and (max-device-width: 1024px) {
 
-	}
+// FIRST DIV: HOME
+  #menu {
+    font-size: 1.5em;
+  }
+
+  #nav {
+    z-index: 100;
+    position: fixed;
+    background-color: #497CAD;
+    border-radius: 6px;
+    height: 200px;
+    margin-top: 150px;
+    transition: all 0.5s ease;
+    color: white;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    left: -90px;
+  }
+
+
+  .toggled {
+    padding-left: 10%;
+  }
+
+  #body {
+    transition: all 0.5s ease;
+  }
+
+  #top_div {
+    background: url(image_path('top_div.png'));
+    background-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    height: 100vh;
+  }
+
+    #top_div > h1 {
+      text-align: center;
+      width: 50%;
+      padding: 10px;
+      margin: 0 0 0 50%;
+      color: white;
+      font-size: 75px;
+      border-bottom: 2px white solid;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    }
+
+    #recommendation {
+      width: 50%;
+      margin: 0 0 0 50%;
+      // background-color: white;
+      text-align: left;
+      font-size: 25px;
+      padding: 10px;
+      color: white;
+    }
+
+        #recommendation > li {
+          background-color: rgba(0,128,226, 0.4);
+          margin-bottom: 10px;
+          border-radius: 6px;
+          padding: 15px;
+        }
+
+//FIRST DIV ENDS: HOME
+
+//SECOND DIV BEGINS: ABOUT
+
+  #about-me {
+    background: url(image_path('aboutmebg.png'));
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    padding-top: 200px;
+  }
+
+      #about-me > h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      #picture {
+        padding-top: 2%;
+        background: url(image_path('aboutmepic.jpg'));
+        background-position: 0 2%;
+        background-size: cover;
+        width: 30%;
+        float: left;
+        margin-left: 20%;
+        height: 50%;
+        border: 4px #0080E2 solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #bio {
+        padding: 5px;
+        background-color: rgba(0,128,226, 0.8);
+        width: 40%;
+        float: left;
+        height: 310px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+      }
+
+//SECOND DIV ENDS: ABOUT
+
+//THIRD DIV BEGINS: PORTFOLIO
+
+  #portfolio {
+    background: url(image_path('portfolio.png'));
+    background-position: 0 100%;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+      #portfolio > h1 {
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+      }
+
+      #mywork {
+        margin: 0 0 0 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-left: 150px;
+      }
+
+      #mywork > ol {
+        list-style-type: none;
+        float: left;
+        padding-right: 20px;
+        width: 40%;
+      }
+
+      #mywork > ol >  li {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,128,226, 0.4);
+        color: white;
+        border: 1px transparent solid;
+        margin-bottom: 25px;
+        font-size: 20px;
+        border-radius: 6px;
+      }
+
+      #mywork > ol >  li:hover {
+        border: 1px white  solid;
+        color: white;
+      }
+
+      #mywork > ol > li > p {
+        font-size: 15px;
+      }
+
+//THIRD DIV ENDS: PORTFOLIO
+
+//FOURTH DIV BEGINS: CONTACT
+
+  #contact-me {
+    background: url(image_path('contactme.jpg'));
+    background-position: 0% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+      #formbox> h1 {
+        text-align: center;
+        // padding-top: 20%;
+        // padding-bottom: 20%;
+        color: white;
+        // background-color: green;
+      }
+
+      #formbox {
+        color: white;
+        // background-color: maroon;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        padding: 5% 0 0 0;
+      }
+
+  #contactform {
+    border-radius: 6px;
+    background-color: rgb(101,185,130);
+    width: 500px;
+    height: 350px;
+    padding: 20px 0 0 200px;
+    // border: .5px black solid;
+    // margin-left: 400px;
+  }
+
+  #textboxid {
+      height:30px;
+      width: 300px;
+      font-size:14pt;
+      border-radius: 6px;
+  }
+
+  #textboxid-message {
+    height: 90px;
+    width: 300px;
+    font-size:14pt;
+  }
+
+  #socialmedia {
+    padding-left: 30px;
+  }
+
+  #socialmedia-list {
+    padding: 10px;
+    background-color: rgb(101,185,130);
+    display: inline;
+    float: left;
+    border-radius: 50%;
+  }
+  //FOURTH DIV ENDS: CONTACT
+}
 
  //  _______       ____  _      ______ _______            ______ __   ___  _______   __
  // |__   __|/\   |  _ \| |    |  ____|__   __|          |____  / /  / _ \|  __ \ \ / /
@@ -288,7 +987,233 @@ li {
  //    | |/ ____ \| |_) | |____| |____   | |               / /| (_) | (_) | |    / . \
  //    |_/_/    \_\____/|______|______|  |_|              /_/  \___/ \___/|_|   /_/ \_\
 @media only screen and (max-device-width: 768px) {
+    // FIRST DIV: HOME
+    #nav {
+      z-index: 100;
+      position: fixed;
+      background-color: #497CAD;
+      border-radius: 6px;
+      height: 0;
+      width: 0;
+      transition: all 0.5s ease;
+      color: white;
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      left: 0;
+      // ^Moved side nav out completely
+    }
 
+    #menu {
+      font-size: 0;
+    }
+
+    .toggled {
+      padding-left: 10%;
+    }
+
+    #top_div {
+      background: url(image_path('top_div.png'));
+      background-position: 15% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 10px;
+      height: 100vh;
+      width: 118%;
+    }
+
+      #top_div > h1 {
+        line-height: .8em;
+        text-align: center;
+        width: 100%;
+        padding-top: 60px;
+        margin: 0 0 0 0;
+        color: white;
+        font-size: 150px;
+        border-bottom: 0px white solid;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      }
+
+      #recommendation {
+        width: 50%;
+        margin: 80px 0 0 500px;
+        text-align: center;
+        font-size: 25px;
+        padding: 0px;
+        color: white;
+      }
+
+          #recommendation > li {
+            background-color: rgba(0,128,226, 0.4);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 15px;
+          }
+  // END OF FIRST DIV: HOME
+
+  //SECOND DIV: ABOUT ME
+  #about-me {
+    background: url(image_path('aboutmebg.png'));
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+      #about-me > h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      #picture {
+        padding-top: 0;
+        background: url(image_path('aboutmepic.jpg'));
+        background-position: 0 2%;
+        background-size: cover;
+        width: 300px;
+        float: left;
+        margin: 200px 0 0 5%;
+        height: 50%;
+        border: 4px #0080E2 solid;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #bio {
+        padding: 20px;
+        background-color: rgba(0,128,226, 0.8);
+        margin: 200px 5% 5% 0;
+        width: 650px;
+        float: left;
+        height: 340px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        font-size: 24px;
+      }
+  //END OF SECON DIV: ABOUT ME
+
+  // THIRD DIV: PORTFOLIO
+  #portfolio {
+    background: url(image_path('portfolio.png'));
+    background-position: 0 100%;
+    background-size: cover;
+    margin: 0;
+    width: 120%;
+    height: 110vh;
+  }
+
+      #portfolio > h1 {
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-size: 100px;
+      }
+
+      #mywork {
+        margin: 2% 0 0 0;
+        width: 85%;
+        height: 1350px;
+        text-align: center;
+        margin-left: 10px;
+        padding-bottom: 0px;
+        padding-left: 150px;
+      }
+
+      #mywork > ol {
+        list-style-type: none;
+        float: left;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width:40%;
+        height: 45%;
+      }
+
+      #mywork > ol >  li {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,128,226, 0.4);
+        color: white;
+        border: 1px transparent solid;
+        margin-bottom: 25px;
+        font-size: 40px;
+        border-radius: 6px;
+      }
+
+      #mywork > ol >  li:hover {
+        border: 1px white solid;
+        color: white;
+      }
+
+      #mywork > ol > li > p {
+        font-size: 20px;
+      }
+  // END OF THIRD DIV: PORTFOLIO
+
+  // FOURTH/LAST DIV: CONTACT ME
+  #contact-me {
+    background: url(image_path('contactme.jpg'));
+    background-position: 60% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 120%;
+  }
+
+  #formbox {
+    color: white;
+    // background-color: maroon;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    padding: 2% 10% 0 0;
+  }
+
+  #contactform {
+    border-radius: 15px;
+    background-color: rgba(101,185,130,0.8);
+    width: 400px;
+    height: 400px;
+    margin: 0 0 0 350px;
+    padding: 40px 15px 0 15px;
+  }
+
+    #contactform > h1 {
+      text-align: center;
+      color: white;
+      font-size: 45px;
+    }
+
+  #textboxid {
+      height:45px;
+      width: 300px;
+      font-size:15pt;
+      border-radius: 6px;
+  }
+
+  #textboxid-message {
+    height: 75px;
+    width: 300px;
+    font-size:15pt;
+    border-radius: 6px;
+  }
+
+  #socialmedia {
+    padding-left: 200px;
+  }
+
+  #socialmedia-list {
+    padding: 10px;
+    background-color: rgb(101,185,130);
+    display: inline;
+    float: left;
+    border-radius: 50%;
+  }
+  // END OF FOURTH/LAST DIV: CONTACT ME
 
   }
 
@@ -299,7 +1224,7 @@ li {
  // | |  | | |__| | |_) || |_| |____| |____  | |____              | |/ /_ ___) | |    / . \
  // |_|  |_|\____/|____/_____|______|______| |______|             |_|____|____/|_|   /_/ \_\
 @media only screen and (max-device-width: 425px) {
-  // FIRST DIV: HOME
+    // FIRST DIV: HOME
     #nav {
       z-index: 100;
       position: fixed;
@@ -417,7 +1342,7 @@ li {
     background-size: cover;
     margin: 0;
     width: 120%;
-    height: 100vh;
+    height: 110vh;
   }
 
       #portfolio > h1 {
@@ -428,12 +1353,13 @@ li {
       }
 
       #mywork {
-        margin: 3% 0 5% 5%;
+        margin: 0 0 0 0;
         width: 85%;
-        height: 100%;
+        height: 1350px;
         text-align: center;
-        padding-left: 80px;
-        padding-bottom: 100px;
+        margin-left: 50px;
+        padding-bottom: 0px;
+        padding-left: 75px;
       }
 
       #mywork > ol {
@@ -481,7 +1407,7 @@ li {
     width: 800px;
     height: 950px;
     text-align: center;
-    padding: 20% 10% 0 0;
+    padding: 10% 10% 0 0;
   }
 
   #contactform {
@@ -997,5 +1923,3 @@ li {
 }
 // END OF FOURTH/LAST DIV: CONTACT ME
   }
-
-// MEDIA QUIERIES END================================================================================
