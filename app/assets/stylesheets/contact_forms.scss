@@ -637,6 +637,7 @@ li {
           text-align: center;
           padding-top: 40px;
           color: white;
+          font-size: 60px;
         }
 
         #mywork {
@@ -708,9 +709,9 @@ li {
       background-color: rgb(101,185,130);
       width: 500px;
       height: 350px;
-      padding: 20px 0 0 200px;
+      padding: 20px 0 0 20px;
       // border: .5px black solid;
-      // margin-left: 400px;
+      margin-left: 300px;
     }
 
     #textboxid {
@@ -926,7 +927,7 @@ li {
     width: 100%;
   }
 
-      #formbox> h1 {
+      #formbox > h1 {
         text-align: center;
         // padding-top: 20%;
         // padding-bottom: 20%;
