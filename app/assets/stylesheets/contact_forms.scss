@@ -279,16 +279,18 @@ li {
       position: fixed;
       background-color: #497CAD;
       border-radius: 6px;
-      height: 450px;
+      height: 400px;
       margin-top: 150px;
       transition: all 0.5s ease;
       color: white;
       box-shadow:0 0 20px rgba(0,0,0,0.8);
-      left: -100px;
+      left: -225px;
+      padding-right: 20px;
+      padding-left: 10%;
     }
 
     .toggled {
-      padding-left: 10%;
+      padding-left: 0%;
     }
 
     #body {
@@ -308,7 +310,7 @@ li {
         text-align: center;
         width: 50%;
         padding: 10px;
-        margin: 8% 0 10px 50%;
+        margin: 1% 0 10px 50%;
         color: white;
         font-size: 200px;
         border-bottom: 2px white solid;
@@ -324,7 +326,7 @@ li {
         margin: 0 0 0 54%;
         // background-color: white;
         text-align: left;
-        font-size: 60px;
+        font-size: 50px;
         padding: 10px;
         color: white;
       }
@@ -345,8 +347,8 @@ li {
       background-size: cover;
       width: 100%;
       height: 100vh;
-      font-size: 45px;
       padding-top: 250px;
+      font-size: 35px;
     }
 
         #about-me > h1 {
@@ -362,7 +364,7 @@ li {
           width: 35%;
           float: left;
           margin-left: 20%;
-          height: 50%;
+          height: 730px;
           border: 4px #0080E2 solid;
           border-top-left-radius: 10px;
           border-bottom-left-radius: 10px;
@@ -373,7 +375,7 @@ li {
           background-color: rgba(0,128,226, 0.8);
           width: 40%;
           float: left;
-          height: 800px;
+          height: 750px;
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
           color: white;
@@ -400,8 +402,8 @@ li {
         }
 
         #mywork {
-          margin: 8% 0 0 5%;
-          width: 80%;
+          margin: 3% 0 0 5%;
+          width: 70%;
           height: 50%;
           text-align: center;
           padding-left: 425px;
@@ -458,17 +460,17 @@ li {
           color: white;
           // background-color: maroon;
           width: 90%;
-          height: 70%;
+          height: 78%;
           text-align: center;
-          padding: 5% 10% 0 0;
+          padding: 3% 10% 0 0;
         }
 
     #contactform {
       border-radius: 6px;
       background-color: rgba(101,185,130, 0.8);
       width: 60%;
-      height: 1000px;
-      padding: 20px 0 0 0;
+      height: 900px;
+      padding: 15px 0 0 0;
       margin-left: 450px
       // border: .5px black solid;
       // margin-left: 400px;
@@ -637,12 +639,12 @@ li {
           text-align: center;
           padding-top: 40px;
           color: white;
-          font-size: 60px;
+          font-size: 40px;
         }
 
         #mywork {
-          margin: 5% 0 0 5%;
-          width: 100%;
+          margin: 2% 0 0 10%;
+          width: 80%;
           height: 50%;
           text-align: center;
           padding-left: 120px;
@@ -652,7 +654,8 @@ li {
           list-style-type: none;
           float: left;
           padding-right: 35px;
-          width: 40%;
+          width: 45%;
+
         }
 
         #mywork > ol >  li {
@@ -698,7 +701,7 @@ li {
         #formbox {
           color: white;
           // background-color: maroon;
-          width: 100%;
+          width: 85%;
           height: 60%;
           text-align: center;
           padding: 5% 10% 0 0;
@@ -759,7 +762,7 @@ li {
     position: fixed;
     background-color: #497CAD;
     border-radius: 6px;
-    height: 200px;
+    height: 175px;
     margin-top: 150px;
     transition: all 0.5s ease;
     color: white;
@@ -826,7 +829,7 @@ li {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 200px;
   }
 
@@ -882,7 +885,7 @@ li {
 
       #mywork {
         margin: 0 0 0 0;
-        width: 100%;
+        width: 80%;
         height: 100%;
         text-align: center;
         padding-left: 150px;
@@ -944,14 +947,15 @@ li {
         padding: 5% 0 0 0;
       }
 
+  // #contact box div
   #contactform {
     border-radius: 6px;
-    background-color: rgb(101,185,130);
+    background-color: rgba(101,185,130, 0.9);
     width: 500px;
     height: 350px;
-    padding: 20px 0 0 200px;
+    padding: 20px 0 0 100px;
     // border: .5px black solid;
-    // margin-left: 400px;
+    margin-left: 60px;
   }
 
   #textboxid {
@@ -1095,7 +1099,7 @@ li {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         color: white;
-        font-size: 24px;
+
       }
   //END OF SECON DIV: ABOUT ME
 
