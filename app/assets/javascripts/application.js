@@ -18,12 +18,13 @@
 $(document).ready(function () {
 
 
-// effect that adds padding left to #nav and #body when mouse hovers over
+// effect that adds padding left to #nav when mouse hovers over
   $("#nav").hover(
     function() {
+      console.log('I should be hovering');
       $("#nav").addClass("toggled");
     },
-// effect that removes padding left to #nav and #body when mouse moves away
+// effect that removes padding left to #nav when mouse moves away
     function() {
       $("#nav").removeClass("toggled");
     }
