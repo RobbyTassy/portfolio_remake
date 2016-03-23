@@ -21,7 +21,7 @@ $(document).ready(function () {
 // effect that adds padding left to #nav when mouse hovers over
   $("#nav").hover(
     function() {
-      console.log('I should be hovering');
+      console.log('i should be hovering')
       $("#nav").addClass("toggled");
     },
 // effect that removes padding left to #nav when mouse moves away
